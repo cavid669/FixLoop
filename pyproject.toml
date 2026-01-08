@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fixloop"
+version = "0.1.0"
+description = "Local-first autonomous AI debugging tool with diff-only patches and verification."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+authors = [
+  {name = "FixLoop", email = "contact@fixloop.dev"}
+]
+
+keywords = [
+  "ai",
+  "debugging",
+  "cli",
+  "automation",
+  "developer-tools",
+  "local-first",
+  "byok"
+]
+
+dependencies = []
+
+[project.scripts]
+fixloop = "fixloop.cli:main"
