@@ -2,7 +2,7 @@
 
 **Your Personal Code Guard**
 
-FixLoop is a **local-first autonomous debugging tool** that runs your code, fixes real runtime errors with minimal diffs, verifies the result, and learns locally — **without your code ever leaving your environment**.
+FixLoop is a **local-first autonomous debugging agent** that runs your code, fixes real runtime errors with minimal diffs, verifies the result, and learns locally — **without your code ever leaving your environment**.
 
 FixLoop is built for serious developers who want **safe autonomy**, not black-box AI.
 
@@ -20,7 +20,7 @@ FixLoop takes a different approach:
 - ✅ Runs real commands  
 - ✅ Applies **diff-only** patches  
 - ✅ Re-runs and **verifies** results  
-- ✅ Requires approval for risky actions  
+- ✅ Requires approval for risky changes  
 - ✅ Learns locally from previous fixes  
 - ✅ Keeps your code **fully under your control**
 
@@ -46,7 +46,7 @@ If any of these are removed, FixLoop loses its purpose.
 
 FixLoop follows a strict engineering loop:
 
-**Plan → Run → Error → Patch (diff) → Re-run → Verify → Learn**
+**Plan → Run → Error → Patch (diff-only) → Re-run → Verify → Learn**
 
 - Executes your actual command  
 - Captures real stack traces and logs  
@@ -59,7 +59,36 @@ This is an engineering workflow.
 
 ---
 
+## Safety by Design
+
+FixLoop enforces safety at every step:
+
+- 🚫 Blocks large diffs automatically  
+- 🚫 Prevents full-file rewrites  
+- ⚠️ Requires approval for risky patches  
+- 🔍 Shows diff before applying changes  
+- ✅ Optional verification command support  
+
+You stay in control — always.
+
+---
+
+## Local Memory (Learning Engine)
+
+FixLoop includes a **local learning memory** powered by SQLite:
+
+- Successful fixes are stored locally
+- Similar future errors are recognized
+- No cloud sync
+- No telemetry
+- No data sharing
+
+Your experience improves **without leaking your code**.
+
+---
+
 ## Installation
 
 ```bash
 pip install fixloop
+
