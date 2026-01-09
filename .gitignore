@@ -14,5 +14,7 @@ venv/
 # Env
 .env
 
-# FixLoop local config
+# FixLoop local data
 .fixloop/
+*.db
+/
