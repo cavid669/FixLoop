@@ -24,7 +24,8 @@ keywords = [
   "byok"
 ]
 
-dependencies = []
+dependencies = ["openai>=1.0.0"]
+
 
 [project.scripts]
 fixloop = "fixloop.cli:main"
